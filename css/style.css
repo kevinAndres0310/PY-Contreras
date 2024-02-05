@@ -106,7 +106,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 70px);
     height: 100%;
     position: relative; 
 }
@@ -414,13 +414,56 @@ main h1 {
 
 
 /*Estilos para el main de turno completado */
+.bg-secondary-info-confirmed{
+    background-color: var(--bg-300);
+    border-bottom: 1px solid var(--bg-100);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    padding: 7px 5px;
+    color: var(--text-100);
+    width: 100%;
+
+}
+
+.bg-secondary-info-confirmed-brother{
+    background-color: var(--bg-300);
+    border-top: 1px solid var(--bg-100);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    padding: 7px 5px;
+    color: var(--text-100);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.check{
+    padding: 5px;
+}
+
+/*------------------------------------*/
 
 /* Estilos para el Footer */
 
 footer {
     background-color: var(--bg-100);
+    color: var(--text-100);
 }
- 
+
+footer section {
+    margin: 2rem 0;
+}
+
+footer section a {
+    margin: 0 1rem;
+}
+
+footer small{
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 0.6rem;
+}
 
 .carousel-item img {
     width: 100%;
