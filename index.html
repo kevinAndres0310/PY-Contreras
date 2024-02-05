@@ -3,58 +3,82 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>Turnero</title>
 	</head>
 	<body>
-		<header>
-			<nav class="nav_home">
-				<ul class="nav_links">
-					<li>
-						<a href="./index.html">Inicio</a>
-						<hr class="selected" />
-					</li>
-					<li>
-						<a href="./page/sacarturno/servicio.html">Servicios</a>
-					</li>
-					<li>
-						<a href="./page/contacto.html">Acerca de nosotros</a>
-					</li>
-				</ul>
-				<a class="btn_login" href="./page/loginRegister/login.html">
-					<b>Iniciar Sesión</b>
-				</a>
-			</nav>
-		</header>
-
-		<main>
-			<h1>Bienvenido a nuestra BarberShop!</h1>
-			<section class="container_cards">
-				<article class="card card_parrafos">
-					<div class="background_negro">
-						<h2>Experimenta los mejores cortes de pelo y servicios de peluquería.</h2>
-					</div>
-				</article>
-				<article class="card reservar">
-					<div class="background_negro">
-						<h2>
-							Haz tu reserva ahora y disfruta de la comodidad de agendar tu cita cuando
-							más te convenga!
-						</h2>
-						<a class="btn" href="./page/sacarturno/servicio.html">
-							<b>Reservar</b>
+		<section class="background-section bg-home">
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<section class="container-fluid">
+						<a class="navbar-brand" href="#"><h1>Barbaro</h1></a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNavAltMarkup"
+							aria-controls="navbarNavAltMarkup"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<section class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<section class="navbar-nav space">
+								<div class="d-lg-flex" aria-current="page">
+									<a class="nav-link active" href="#">Home</a>
+									<a class="nav-link" href="./page/sacarturno/servicio.html">Servicio</a>
+									<a class="nav-link" href="#">Precios</a>
+									<a class="nav-link" href="#">Acerca de nosotros</a>
+								</div>
+								<figure class="d-none d-lg-block nav-iconos">
+									<a href="#"
+										><img src="./assets/iconos/facebook.svg" alt="icono de facebook"
+									/></a>
+									<a href="#"
+										><img src="./assets/iconos/instagram.svg" alt="icono de instagram"
+									/></a>
+									<a href="#"
+										><img src="./assets/iconos/whatsapp.svg" alt="icono de whatsapp"
+									/></a>
+								</figure>
+							</section>
+						</section>
+					</section>
+				</nav>
+			</header>
+			<main class="container box-flex-column">
+				<section class="box-flex-column">
+					<section class="box-flex-column">
+						<article class="col-12">
+							<h1 class="col-12">¡Barbaro!</h1>
+							<p class="col-12 h3 h3-margin">
+								Bienvenido a nuestra <br />
+								BarberShop!
+							</p>
+						</article>
+						<a
+							href="./page/sacarturno/servicio.html"
+							class="btn-primary"
+							role="button">
+							Reserva un turno
 						</a>
-					</div>
-				</article>
-				<article class="card card_parrafos">
-					<div class="background_negro">
-						<h2>
-							Encuentra la manera perfecta de lucir impecable sin perder tiempo.
-						</h2>
-					</div>
-				</article>
-			</section>
-		</main>
+					</section>
+					<figure class="circle">
+						<p>Turnos en Linea</p>
+					</figure>
+				</section>
+			</main>
+		</section>
 
 		<footer>
 			<section>
@@ -86,5 +110,14 @@
 				reservados.
 			</small>
 		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"></script>
 	</body>
 </html>

@@ -3,57 +3,232 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../../css/stylesReservarTurno/reservar.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="../../css/style.css" />
 		<title>Servicio</title>
 	</head>
 	<body>
-		<header>
-			<nav class="nav">
-				<div class="nav__box">
-					<a href="../../index.html">
-						<u>Volver</u>
-					</a>
-				</div>
-				<h2>Elegir</h2>
-			</nav>
-		</header>
+		<section class="background-section bg-servicios">
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<section class="container-fluid">
+						<a class="navbar-brand" href="#"><h1>Barbaro</h1></a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNavAltMarkup"
+							aria-controls="navbarNavAltMarkup"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<section class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<section class="navbar-nav space">
+								<div class="d-lg-flex" aria-current="page">
+									<a class="nav-link" href="../../index.html">Home</a>
+									<a class="nav-link active" href="./page/sacarturno/servicio.html"
+										>Servicio</a
+									>
+									<a class="nav-link" href="#">Precios</a>
+									<a class="nav-link" href="#">Acerca de nosotros</a>
+								</div>
+								<figure class="d-none d-lg-block nav-iconos">
+									<a href="#"
+										><img src="../../assets/iconos/facebook.svg" alt="icono de facebook"
+									/></a>
+									<a href="#"
+										><img
+											src="../../assets/iconos/instagram.svg"
+											alt="icono de instagram"
+									/></a>
+									<a href="#"
+										><img src="../../assets/iconos/whatsapp.svg" alt="icono de whatsapp"
+									/></a>
+								</figure>
+							</section>
+						</section>
+					</section>
+				</nav>
+			</header>
 
-		<main>
-			<h1>Servicio</h1>
+			<main class="container box-flex-column">
+				<section class="col-12 box-flex-column">
+					<h1 class="col-12 h1-servicios">Elegir Servicio</h1>
+					<!--Container of Cards-->
+					<section class="row row-cols-md-1 row-cols-lg-3">
+						<!--First Card-->
+						<section class="row row-cols-md-2 col-lg-4 border-md">
+							<div class="card-header box-flex d-none d-md-flex d-lg-none md-header">
+								<b>Corte de cabello</b>
+								<p class="m-0">$3500</p>
+							</div>
+							<article class="card">
+								<div class="card-header box-flex d-md-none d-lg-flex">
+									<b>Corte de cabello</b>
+									<p class="m-0">$3500</p>
+								</div>
+								<section class="box-flex-column">
+									<article
+										id="carouselExampleAutoplaying"
+										class="carousel slide w-100"
+										data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<a href="./profesional.html">
+													<img
+														src="../../assets/servicios/cortes1.jpg"
+														alt="imagen corte de cabello" />
+												</a>
+											</div>
+											<div class="carousel-item">
+												<a href="./profesional.html">
+													<img
+														src="../../assets/servicios/corte2.jpg"
+														alt="imagen corte de cabello" />
+												</a>
+											</div>
+										</div>
+									</article>
+									<p class="card-text text-center d-md-none d-lg-block">
+										Transforma tu estilo con nuestro servicio de corte de cabello. Obtén
+										un look fresco y moderno de la mano de expertos estilistas.
+										¡Experimenta la excelencia!
+									</p>
+								</section>
+							</article>
+							<div class="d-lg-none d-none d-md-flex box-flex">
+								<p class="card-text text-center d-none d-md-block d-lg-none">
+									Transforma tu estilo con nuestro servicio de corte de cabello. Obtén un
+									look fresco y moderno de la mano de expertos estilistas. ¡Experimenta
+									la excelencia!
+								</p>
+							</div>
+						</section>
+						<!--Second Card-->
+						<section class="row row-cols-md-2 col-lg-4 border-md">
+							<div class="card-header box-flex d-none d-md-flex d-lg-none md-header">
+								<b>Corte de cabello</b>
+								<p class="m-0">$3500</p>
+							</div>
+							<div class="d-lg-none d-none d-md-flex box-flex">
+								<p class="card-text text-center d-none d-md-block d-lg-none">
+									Dale un toque único a tu apariencia con nuestro servicio de corte y
+									barba. Nuestros expertos barberos te brindarán un estilo impecable y a
+									la moda. ¡Descubre la auténtica experiencia de cuidado!
+								</p>
+							</div>
+							<article class="card">
+								<div class="card-header box-flex">
+									<b>Corte + Barba</b>
+									<p class="m-0">$4500</p>
+								</div>
+								<section class="box-flex-column">
+									<section
+										id="carouselExampleAutoplaying"
+										class="carousel slide w-100"
+										data-bs-ride="carousel">
+										<section class="carousel-inner">
+											<div class="carousel-item active">
+												<a href="./profesional.html">
+													<img
+														src="../../assets/servicios/corte-barba1.jpg"
+														alt="Imagen de corte y barba" />
+												</a>
+											</div>
+											<div class="carousel-item">
+												<a href="./profesional.html">
+													<img
+														src="../../assets/servicios/corte-barba2.jpg"
+														alt="Imagen de corte y barba" />
+												</a>
+											</div>
+										</section>
+									</section>
+									<p class="card-text text-center d-md-none d-lg-block">
+										Dale un toque único a tu apariencia con nuestro servicio de corte y
+										barba. Nuestros expertos barberos te brindarán un estilo impecable y a
+										la moda. ¡Descubre la auténtica experiencia de cuidado!
+									</p>
+								</section>
+							</article>
+						</section>
+						<!--Third Card-->
+						<section class="row row-cols-md-2 col-lg-4 border-md">
+							<article class="card">
+								<div class="card-header box-flex">
+									<b>Barba</b>
+									<p class="m-0">$2000</p>
+								</div>
+								<section class="box-flex-column">
+									<section
+										id="carouselExampleAutoplaying"
+										class="carousel slide w-100"
+										data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<a href="./profesional.html">
+													<img
+														src="../../assets/servicios/barba1.jpg"
+														class="d-block w-100"
+														alt="..." />
+												</a>
+											</div>
+											<div class="carousel-item">
+												<a href="./profesional.html">
+													<img
+														src="../../assets/servicios/barba2.jpg"
+														class="d-block w-100"
+														alt="..." />
+												</a>
+											</div>
+										</div>
+									</section>
+									<p class="card-text text-center d-md-none d-lg-block">
+										Define tu estilo con nuestro servicio de corte de barba. Obtén un
+										aspecto impecable y a la moda de la mano de nuestros expertos
+										barberos. ¡Descubre la auténtica experiencia de cuidado y resalta tu
+										masculinidad con un toque único!
+									</p>
+								</section>
+							</article>
+							<div class="d-lg-none d-none d-md-flex box-flex">
+								<p class="card-text text-center d-none d-md-block d-lg-none">
+									Define tu estilo con nuestro servicio de corte de barba. Obtén un
+									aspecto impecable y a la moda de la mano de nuestros expertos barberos.
+									¡Descubre la auténtica experiencia de cuidado y resalta tu masculinidad
+									con un toque único!
+								</p>
+							</div>
+						</section>
+					</section>
+				</section>
+			</main>
+		</section>
 
-			<section class="container">
-				<a href="./profesional.html" class="container__box">
-					<div>
-						<p>Corte de cabello</p>
-						<small class="tiempo_servicio">30 minutos</small>
-					</div>
-					<p>$3.500</p>
-				</a>
-				<a href="./profesional.html" class="container__box">
-					<div>
-						<p>Corte + Barba</p>
-						<small class="tiempo_servicio">45 minutos</small>
-					</div>
-					<p>$4.500</p>
-				</a>
-				<a href="./profesional.html" class="container__box">
-					<div>
-						<p>Barba</p>
-						<small class="tiempo_servicio">20 minutos</small>
-					</div>
-					<p>$2.000</p>
-				</a>
-			</section>
-
-			<img src="../../assets/servicio.svg" alt="" />
-
-			<p class="ultimo_parrafo">© 2024 Barbershops</p>
-		</main>
 		<footer>
 			<small
 				>Copyright © 2022 - 2023 BarbaroBarbershops SRL. Todos los derechos
 				reservados.
 			</small>
 		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"></script>
 	</body>
 </html>

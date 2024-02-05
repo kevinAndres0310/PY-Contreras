@@ -1,10 +1,16 @@
 /* Estilos base */
 
 :root{
-    --nav-bg-negro: #161616;
-    --bg-verde: #37E367;
-    --bg-blanco: #ffffff;
-    --bg-gris-oscuro: #302E2E;
+    --primary-100:#0085ff;
+    --primary-200:#69b4ff;
+    --primary-300:#e0ffff;
+    --accent-100:#006fff;
+    --accent-200:#e1ffff;
+    --text-100:#FFFFFF;
+    --text-200:#9e9e9e;
+    --bg-100:#1E1E1E;
+    --bg-200:#2d2d2d;
+    --bg-300:#454545;
 }
 
 * {
@@ -14,74 +20,80 @@
 }
 
 body {
-    height: 100vh;
+    background-color: var(--bg-100);
     font-size: 1rem;
-    background-color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
 }
+
+/*Fondo*/
+.background-section {
+    position: relative;
+}
+
+.background-section::before {
+    content: "";
+    background-size: cover;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+/*Fondo para Home*/
+.bg-home::before {
+    background-image: url(../assets/home/mobile.jpg);
+}
+
+/*Fondo para Servicios*/
+.bg-servicios {
+    background-color: var(--primary-200);
+}
+
+
 /* ----------------- */
 
 
 
 /* Estilos para el Header */
-
-
-header {
-    height: 15vh;
+.navbar {
+    background: var(--bg-100);
 }
 
-.nav_home {
-    height: 100%;
+.navbar-brand{
+   font-weight: bold;
+   font-size: 1.2rem;
+}
+
+.space{
     width: 100%;
-    background: var(--nav-bg-negro);
-    display: flex;
     justify-content: space-between;
 }
 
-.nav_links {
-    list-style-type: none;
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.nav_links li {
-    margin: 0 10px;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.selected {
-    height: 4px;
-    width: 45px;
-    background-color: var(--bg-verde);
-    border: none;
-    border-radius: 999px;
-    box-shadow: 0px 4px 15px 0px rgba(55, 227, 103, 0.35);
-}
-
-.btn_login {
+.nav-iconos{
     display: flex;
     align-items: center;
-    background-color: var(--nav-bg-negro);
-    border: solid 4px var(--bg-verde);
-    border-radius: 15px;
-    box-shadow: 4px 4px 15px 0px rgba(55, 227, 103, 0.35);
-    height: 40px;
-    padding: 0 8px;
-    font-size: 0.8rem;
-    margin: 10px 10px 0 0;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
+    justify-content: space-between;
+    margin: 0;
 }
 
+.nav-iconos a {
+    color: var(--text-100);
+    margin: 0 0.5rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--primary-200);
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--primary-300);
+}
 
 
 /*------------------------ */
@@ -89,109 +101,283 @@ header {
 
 
 /* Estilos para el Main */
-
-
 main {
-    width: 100%;
-    padding: 0 2.5rem;
-    background: 
-    linear-gradient(143deg, #144637 4.27%, rgba(0, 0, 0, 0.00) 35.47%), 
-    linear-gradient(130deg, #000 59.38%, #000E12 74.7%, #061F27 86.45%, #002733 92.9%, #003141 97.21%, #004358 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 56px);
+    height: 100%;
+    position: relative; 
 }
 
 main h1 {
-    padding-top: 1rem;
     text-align: center;
-    font-size: 1.8rem;
-    color: var(--bg-blanco);
-
+    font-size: 3rem;
+    color: var(--text-100);
+    font-family: 'Archivo Black', sans-serif;
+    margin: 0;
 }
 
-.container_cards{
-    display: flex;
-    flex-direction: column;
+.h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-200);
 }
 
-.card{
-    width: 100%;
-    background: 
-    linear-gradient(147deg, rgba(7,82,82,1) 0%, rgba(0,198,79,1) 100%);
-    border-radius: 2.5rem;
-    background-repeat: repeat;
-    padding: 0.4rem;
-    margin: 1rem 0;
+.box-flex{
     display: flex;
-    text-align: center;
+    justify-content: center;
     align-items: center;
-    transition: all 0.3s ease-in-out;
 }
 
-.card:hover{
-    box-shadow: 0px 2px 20px 1px rgba(255, 255, 255, 0.30);
-}
-
-.card_parrafos{
-    height: 250px;
-}
-
-.background_negro{
-    background-color: var(--nav-bg-negro);
-    padding: 2rem;
-    border-radius: 2.5rem;
-    height: 100%;
-    width: 100%;
+.box-flex-column{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.card h2 {
-    color: var(--bg-blanco);
-    font-size: 1.4rem;
+ 
+
+.h3-margin {
+    margin-bottom: 2rem;
 }
 
-.reservar{
-    background: linear-gradient(147deg,rgba(255, 255, 255, 0.7), rgba(31, 189, 94, 1));
-    box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 0.30);
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s;
+
+.btn-primary{
+    border: 3px solid var(--primary-300);
+    background-color: transparent;
+    color: var(--primary-300);
+    border-radius: 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+.btn-primary:hover, .btn-primary:active{
+    color: var(--text-100);
+    background-color: var(--primary-200);
+    border: 3px solid var(--accent-200);
+    border-radius: 1.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px;
 }
 
-.reservar:hover {
-    background: linear-gradient(147deg,rgba(31, 189, 94, 1), rgba(255, 255, 255, 0.7));
-    padding: 0.5rem;
+.active{
+    background: transparent;
 }
 
-.btn{
+.circle{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: var(--primary-200);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 4px solid var(--nav-bg-negro);
-    border-radius: 999px;
-    color: #000;
-    width: 100%;
-    height: 56px;
-    background-color: var(--bg-verde);
-    margin-top: 1rem;
+    color: var(--bg-100);
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    text-align: center;
 }
 
-.reservar h2 {
-    font-size: 1.5rem;
-    
+.circle p {
+    font-size: 0.65rem;
+    margin: 0;
+    padding: 0;
+    color: var(--text-100);
 }
+
 
 /* --------------------- */
 
+/*Estilos para main de servicios*/
+
+.row{
+    height: min-content; 
+    justify-content: space-around; 
+} 
+
+.h1-servicios {
+    margin: 1rem;
+    color: var(--bg-200);
+}
+
+.card{     
+   background-color: var(--accent-200); 
+   color: var(--bg-100);
+   border: 3px solid var(--bg-200); 
+   border-radius: 10px; 
+   max-width: 80%;   
+   padding: 0px !important;
+   margin: 1rem;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--text-100);
+    background-color: var(--bg-200);
+    width: 100%;
+}
+
+.card-text{
+    padding: 1rem 0.5rem; 
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 
 /* Estilos para el Footer */
 
 footer {
-    background-color: var(--nav-bg-negro);
+    background-color: var(--bg-100);
+}
+ 
+
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
 }
 
 
 
 /* --------------------- */
+
+/*// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .bg-home::before {
+        background-image: url(../assets/home/tablet.jpg);
+    }
+    .bg-servicios::before {
+        background-image: url(../assets/servicios/tablet.jpg);
+    }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+    .circle{
+        width: 80px;
+        height: 80px;
+    }
+    .border-md{
+        border: 5px solid var(--bg-200);
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        padding: 0; 
+    }
+    .md-header{
+        height: 40px;   
+        padding: 0 1rem !important;  
+    }
+    .card-header:first-child {
+        border-radius: 0; 
+    }
+    
+    
+    .card-text{
+        padding: 0; 
+        width: 100%;  
+    }
+    .border-md p{
+        font-size: 1.2rem;
+    }
+    /*Aqui estan los texto responsive para Tablet*/
+    .navbar-brand{
+        font-size: 1.5rem; 
+     }
+     
+     .card{ 
+        border-radius: 0; 
+        margin: 0; 
+     }
+    main h1 {
+        font-size: 4rem;
+    }
+
+    .h3 {
+        font-size: 1.2rem;
+    }
+    .btn-primary{
+        font-size: 1.2rem;
+    }
+    .btn-primary:hover{
+        font-size: 1.3rem;
+    }
+    .circle p {
+        font-size: 0.9rem;
+    }
+
+    /*Propiedades responsive para la screen Servicios */
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .bg-home::before {
+        background-image: url(../assets/home/desktop.jpg);
+    }
+    .border-md{
+        border: 5px solid var(--bg-200);
+        margin-bottom: 1rem;
+        border-radius: 10px;
+    }
+    .circle{
+        width: 100px;
+        height: 100px;
+    }
+    .border-md{
+        border: none;
+        margin-bottom: 0; 
+    }
+    .border-md p{
+        font-size: 1rem;
+    }
+    .card{
+        width: 100%;
+        height: 100%;  
+     }
+     .card-text{
+    width: 100%;  
+    height: 100%;
+    padding: 1rem 
+    }
+
+     .row{
+        justify-content: space-around; 
+        height: auto; 
+     }
+    /*Aqui estan los texto responsive para Desktop*/
+    main h1 {
+        font-size: 5rem;
+    }
+    .navbar-brand{
+        font-size: 1.7rem; 
+     }
+
+    .h3 {
+        font-size: 1.4rem;
+    }
+    .btn-primary{
+        font-size: 1.4rem;
+    }
+    .btn-primary:hover{
+        font-size: 1.5rem;
+    }
+    .circle p {
+        font-size: 1rem;
+    }
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
