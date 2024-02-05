@@ -106,7 +106,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: calc(100vh - 56px);
+    min-height: calc(100vh - 80px);
     height: 100%;
     position: relative; 
 }
@@ -230,7 +230,190 @@ main h1 {
     font-size: 1rem;
     font-weight: bold;
 }
+/*------------------------------*/
 
+
+/*Estilos para main de Profesional*/
+
+.container-profesional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    margin: 1rem 2rem !important; 
+    height: auto;
+}
+
+.container-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-profesional{
+    background-color: var(--accent-200);
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    border: 4px solid var(--bg-200);
+    border-radius: 10px;
+    margin: 0rem 1.5rem 2rem 1.5rem; 
+    color: var(--bg-100);
+    transition: 0.5s;
+
+}
+
+.card-profesional:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 2px var(--text-200);;
+}
+
+.bg-circle-user{
+    background-color: var(--primary-200);
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 2px;
+}
+
+.card-profesional p{
+    font-weight: bold;
+    margin: 0 0 0 0.5rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------------*/
+
+/* Estilos para el main de fecha*/
+
+.monthly{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.monthly p{
+    margin: 0 ;
+    font-weight: bold;
+}
+
+.monthly img{
+    vertical-align: sub;
+    margin-left: 5px;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: var(--accent-100);
+    border: 3px solid var(--bg-100); 
+    color: var(--text-100);
+}
+
+.container-date{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.container-date p{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container-date small {
+    font-size: 0.7rem;
+}
+
+.btn-hours{
+    margin-bottom: 0.5rem;
+    padding-right: 1px;
+    padding-left: 1px; 
+}
+
+.btn-continuar{
+    color: var(--bg-100);
+    border-color: var(--bg-100);
+    transition: 0.3s;
+}
+
+.btn-continuar:hover{
+    color: var(--text-100);
+    background-color: var(--bg-300);
+    border-color: var(--accent-200);
+}
+
+
+/*-----------------------------*/ 
+
+/* Estilos para el main de Confirmacion de turno*/
+
+.container-modal{
+    background-color: rgb(177, 226, 245);
+    border: 3px solid var(--bg-100);
+    border-radius: 10px;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.price-title{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--accent-100);
+}
+
+.container-first-info{
+    width: 100%;
+}
+.bg-first-info{
+    background-color: var(--primary-200);
+    border-left:  solid var(--bg-100);
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    padding: 7px 5px;
+}
+
+.container-secondary-info{
+    width: 100%;
+}
+
+.bg-secondary-info{
+    background-color: var(--bg-300);
+    border-left: 4px solid var(--bg-100);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    padding: 7px 5px;
+    color: var(--text-100);
+    width: 100%;
+}
+
+.border-none{
+    border-bottom-right-radius: 0;
+}
+
+.textarea-comment{
+    background-color: whitesmoke;
+    border-left: 4px solid var(--bg-100);
+    width: 100%;
+    height: 150px;
+    border-bottom-right-radius: 10px;
+    resize: none;
+    border-top: 1px solid var(--bg-100);
+    padding: 0.5rem;
+}
+.textarea-comment:focus{
+    outline: none;
+}
+/*----------------------------------------------*/
+
+
+/*Estilos para el main de turno completado */
 
 /* Estilos para el Footer */
 
@@ -335,7 +518,7 @@ footer {
     }
     .border-md{
         border: none;
-        margin-bottom: 0; 
+        margin-bottom: 1rem; 
     }
     .border-md p{
         font-size: 1rem;
