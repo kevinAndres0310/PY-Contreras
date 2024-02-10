@@ -29,32 +29,18 @@ a {
     text-decoration: none;
 }
 
-/*Fondo*/
-.background-section {
-    position: relative;
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.background-section::before {
-    content: "";
-    background-size: cover;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
+.flex-box-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-/*Fondo para Home*/
-.bg-home::before {
-    background-image: url(../assets/home/mobile.jpg);
-}
-
-/*Fondo para Servicios*/
-.bg-servicios {
-    background-color: var(--primary-200);
-}
-
 
 /* ----------------- */
 
@@ -62,24 +48,18 @@ a {
 
 /* Estilos para el Header */
 .navbar {
-    background: var(--bg-100);
+    background: var(--bg-200);
 }
 
 .navbar-brand{
    font-weight: bold;
-   font-size: 1.2rem;
-}
-
-.space{
-    width: 100%;
-    justify-content: space-between;
 }
 
 .nav-iconos{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
+    margin: 0; 
 }
 
 .nav-iconos a {
@@ -91,24 +71,24 @@ a {
     color: var(--primary-200);
 }
 
-.nav-link:focus, .nav-link:hover {
-    color: var(--primary-300);
-}
-
 
 /*------------------------ */
 
 
-
+ 
 /* Estilos para el Main */
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: calc(100vh - 70px);
-    height: 100%;
-    position: relative; 
+
+.bg-home{
+    width: 100%;
+    background: 
+    linear-gradient(30deg,rgba(20, 20, 20, 0.5),rgb(0, 0, 0)), url(../assets/home/mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    min-height: calc(100vh - 56px);
+    max-height: 100%;
 }
 
 main h1 {
@@ -119,59 +99,12 @@ main h1 {
     margin: 0;
 }
 
-.h3 {
-    text-align: center;
-    font-size: 1rem;
-    color: var(--text-200);
-}
-
-.box-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box-flex-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
- 
-
-.h3-margin {
-    margin-bottom: 2rem;
-}
-
-
-.btn-primary{
-    border: 3px solid var(--primary-300);
-    background-color: transparent;
-    color: var(--primary-300);
-    border-radius: 1.5rem;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 5px 10px;
-}
-.btn-primary:hover, .btn-primary:active{
-    color: var(--text-100);
-    background-color: var(--primary-200);
-    border: 3px solid var(--accent-200);
-    border-radius: 1.5rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 5px 10px;
-}
-
-.active{
-    background: transparent;
-}
+/*Estilos para el main de Home*/
 
 .circle{
     height: 70px;
     width: 70px;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: var(--primary-200);
     display: flex;
     justify-content: center;
@@ -190,161 +123,212 @@ main h1 {
     color: var(--text-100);
 }
 
+/*-----------------------------*/
+
+
+
 
 /* --------------------- */
 
 /*Estilos para main de servicios*/
 
-.row{
-    height: min-content; 
-    justify-content: space-around; 
-} 
+.bg-servicios {
+    background-color: var(--primary-200);
+}
+
+.card-servicios{
+    border: 1px solid var(--bg-100);  
+    background-color: var(--primary-300);
+    height: 100%;
+}
+
+.bg-title{
+    background-color: var(--bg-300);
+    color: var(--text-100);
+    border-bottom: 2px solid var(--bg-100); 
+}
 
 .h1-servicios {
-    margin: 1rem;
+    margin-top: 56px; 
     color: var(--bg-200);
 }
 
-.card{     
-   background-color: var(--accent-200); 
-   color: var(--bg-100);
-   border: 3px solid var(--bg-200); 
-   border-radius: 10px; 
-   max-width: 80%;   
-   padding: 0px !important;
-   margin: 1rem;
-}
-
-.card-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2rem;
-    color: var(--text-100);
-    background-color: var(--bg-200);
+.carousel-item img{
     width: 100%;
+    max-height: 350px;
 }
 
-.card-text{
-    padding: 1rem 0.5rem; 
-    font-size: 1rem;
+.caja{
+    position: relative;
+}
+
+.boton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 10px 10px 0;
     font-weight: bold;
+    background-color: var(--primary-200);
+    border: 4px solid var(--primary-300);
+    border-radius: 999px;
+    color: var(--text-100);
 }
 /*------------------------------*/
 
 
 /*Estilos para main de Profesional*/
 
-.container-profesional{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-    margin: 1rem 2rem !important; 
-    height: auto;
-}
-
-.container-card{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.container-card-avatar{
+    gap: 2.5%;
+    padding: 5%;
 }
 
 .card-profesional{
-    background-color: var(--accent-200);
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 1rem;
-    border: 4px solid var(--bg-200);
-    border-radius: 10px;
-    margin: 0rem 1.5rem 2rem 1.5rem; 
-    color: var(--bg-100);
-    transition: 0.5s;
-
-}
-
-.card-profesional:hover {
-    cursor: pointer;
-    box-shadow: 2px 2px 15px 2px var(--text-200);;
+    background-color: var(--primary-300);
+    border-radius: 20px;
+    margin: 3rem 0; 
+    border: 3px solid var(--bg-300);
+    padding: 3rem 20px 1rem 20px; 
+    position: relative;
+    box-shadow: 2px 2px 15px 2px var(--bg-300);
 }
 
 .bg-circle-user{
-    background-color: var(--primary-200);
+    background-color: var(--bg-300);
     border-radius: 50%;
-    padding: 1px;
-    margin-right: 2px;
-}
-
-.card-profesional p{
-    font-weight: bold;
-    margin: 0 0 0 0.5rem !important;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-circle-user img{
+    aspect-ratio: 1/1;
+    border: 2px solid var(--bg-300);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+.bg-circle-user img:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out; 
 }
 
 /*-----------------------------*/
 
 /* Estilos para el main de fecha*/
 
-.monthly{
+.dates{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-.monthly p{
-    margin: 0 ;
-    font-weight: bold;
-}
-
-.monthly img{
-    vertical-align: sub;
-    margin-left: 5px;
-}
-
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    background-color: var(--accent-100);
-    border: 3px solid var(--bg-100); 
-    color: var(--text-100);
-}
-
-.container-date{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: center; 
+    height: 100px;
     width: 100%;
 }
 
-.container-date p{
-    margin: 0;
-    font-size: 1rem;
-    font-weight: bold;
+.btn-container-date, .btn-container-date:hover{
+    color: var(--text-200);
+    background-color: var(--primary-300);
+    border: 2px solid var(--text-200); 
+    border-radius: 10px;
+    transition: 0.4s; 
+    height: 90%;
+    width: 25%;
+    padding: 0;
 }
 
-.container-date small {
-    font-size: 0.7rem;
-}
-
-.btn-hours{
-    margin-bottom: 0.5rem;
-    padding-right: 1px;
-    padding-left: 1px; 
-}
-
-.btn-continuar{
-    color: var(--bg-100);
-    border-color: var(--bg-100);
-    transition: 0.3s;
-}
-
-.btn-continuar:hover{
+.btn.active, .btn.active:hover{
+    background-color: var(--accent-100);
+    border: 1px solid var(--bg-300); 
     color: var(--text-100);
-    background-color: var(--bg-300);
-    border-color: var(--accent-200);
+}
+
+.separador{
+    display: block;
+    width: 90%;
+    margin: 1rem 0; 
+    border-bottom: 1px solid var(--bg-300);
+    opacity: 0.4;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 2%;
+    width: 100%;
+}
+
+.btn-time, .btn-time:hover{
+    background-color: var(--primary-200);
+    color: #686868;
+    border: 1px solid var(--bg-300); 
+    transition: 0.4s;
+}
+
+.container-hours, .container-hours:hover{
+    height: 50%;
+    width: 40%;
+}
+
+.container-info{
+    background-color: rgba(93, 159, 226, 0.4);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.info-finally{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.container-img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.container-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.more-services{
+    align-self: flex-start;
+    display: flex;
+    margin: 0 0 3rem 2rem;
+}
+
+.more-services img {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.more-services:hover img {
+    transform: rotate(180deg);
+}
+
+.more-services-link:hover{
+    color: var(--primary-100);
+    text-decoration: underline;
 }
 
 
@@ -465,11 +449,6 @@ footer small{
     font-size: 0.6rem;
 }
 
-.carousel-item img {
-    width: 100%;
-    object-fit: cover;
-}
-
 
 
 /* --------------------- */
@@ -479,21 +458,53 @@ footer small{
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-    .bg-home::before {
-        background-image: url(../assets/home/tablet.jpg);
+    .container-card-avatar{
+        padding: 0; 
     }
-    .bg-servicios::before {
-        background-image: url(../assets/servicios/tablet.jpg);
+    
+    .bg-home {
+        min-height: calc(100vh - 60px);
+        max-height: 100%;
+        background: 
+        linear-gradient(30deg,rgba(20, 20, 20, 0.5),rgb(0, 0, 0)), url(../assets/home/tablet.jpg);
+        background-size: cover;
     }
+    /*Main de Fechas*/
+    .btn-container-date, .btn-container-date:hover{
+        width: 15%;
+    }
+    .container-hours, .container-hours:hover{
+        height: 50%;
+        width: 25%;
+    }
+    /*----------------*/
 }
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-    .circle{
-        width: 80px;
-        height: 80px;
+    /*Navbar-Tablet*/
+    .navbar-brand{
+        font-size: 1.5rem; 
+     }
+    /*-------------*/
+
+    /*Estilos para Main Home*/
+    main{
+        min-height: calc(100vh - 60px);
     }
+     main h1 {
+        font-size: 4rem;
+    }
+    .h3 {
+        font-size: 1.2rem;
+    }
+    /*----------------------------*/
+
+    /*Estilos para el main de Profesionales*/
+
+    
+    /*--------------------------------*/
     .border-md{
         border: 5px solid var(--bg-200);
         margin-bottom: 1rem;
@@ -501,37 +512,15 @@ footer small{
         padding: 0; 
     }
     .md-header{
-        height: 40px;   
-        padding: 0 1rem !important;  
-    }
-    .card-header:first-child {
-        border-radius: 0; 
-    }
-    
-    
-    .card-text{
-        padding: 0; 
-        width: 100%;  
+        padding: 1rem 1rem !important;  
     }
     .border-md p{
         font-size: 1.2rem;
     }
     /*Aqui estan los texto responsive para Tablet*/
-    .navbar-brand{
-        font-size: 1.5rem; 
-     }
-     
-     .card{ 
-        border-radius: 0; 
-        margin: 0; 
-     }
-    main h1 {
-        font-size: 4rem;
-    }
 
-    .h3 {
-        font-size: 1.2rem;
-    }
+
+
     .btn-primary{
         font-size: 1.2rem;
     }
@@ -543,13 +532,58 @@ footer small{
     }
 
     /*Propiedades responsive para la screen Servicios */
+
+    /*Main de Fechas*/
+    .btn-container-date, .btn-container-date:hover{
+        width: 10%;
+    }
+    .container-hours, .container-hours:hover{
+        height: 50%;
+        width: 15%;
+    }
+    /*----------------*/
 }
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    .bg-home::before {
-        background-image: url(../assets/home/desktop.jpg);
+    /*Imagen de fondo para Home*/
+    main{
+        min-height: calc(100vh - 50px);
+        max-height: 100%; 
     }
+    .bg-home {
+        min-height: calc(100vh - 64px); 
+        background: 
+        linear-gradient(30deg,rgba(20, 20, 20, 0.5),rgb(0, 0, 0)), url(../assets/home/desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /*-------------------------*/
+    /*Navbar-Desktop*/
+    .navbar-brand{
+        font-size: 1.7rem; 
+     }
+    /*-------------*/
+
+    /*Estilos para Main*/
+    main h1 {
+        font-size: 5rem;
+    }
+    /*-----------------*/
+    /*Estilos para el main de Home*/
+    .h3 {
+        font-size: 1.4rem;
+    }
+    /*----------------------------*/
+    
+    /*Estilos para el main de Profesionales*/
+    
+
+    /*--------------------------------*/
+    .container-p-lg{
+        height: 170px;
+    }
+
     .border-md{
         border: 5px solid var(--bg-200);
         margin-bottom: 1rem;
@@ -566,31 +600,15 @@ footer small{
     .border-md p{
         font-size: 1rem;
     }
-    .card{
-        width: 100%;
-        height: 100%;  
-     }
+
      .card-text{
     width: 100%;  
     height: 100%;
     padding: 1rem 
     }
 
-     .row{
-        justify-content: space-around; 
-        height: auto; 
-     }
     /*Aqui estan los texto responsive para Desktop*/
-    main h1 {
-        font-size: 5rem;
-    }
-    .navbar-brand{
-        font-size: 1.7rem; 
-     }
 
-    .h3 {
-        font-size: 1.4rem;
-    }
     .btn-primary{
         font-size: 1.4rem;
     }
@@ -600,6 +618,16 @@ footer small{
     .circle p {
         font-size: 1rem;
     }
+
+    /*Main de Fechas*/
+    .btn-container-date, .btn-container-date:hover{
+        width: 8%;
+    }
+    .container-hours, .container-hours:hover{
+        height: 50%;
+        width: 10%;
+    }
+    /*----------------*/
 }
 
 /*// X-Large devices (large desktops, 1200px and up)*/
