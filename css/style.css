@@ -279,6 +279,10 @@ main h1 {
     width: 40%;
 }
 
+.box-responsive{
+    width: 90%;
+}
+
 .container-info{
     background-color: rgba(93, 159, 226, 0.4);
     border-radius: 20px;
@@ -314,12 +318,12 @@ main h1 {
 .more-services{
     align-self: flex-start;
     display: flex;
-    margin: 0 0 3rem 2rem;
+    margin: 0 0 3rem 0rem;
 }
 
 .more-services img {
     transform: rotate(0deg);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 .more-services:hover img {
@@ -477,6 +481,9 @@ footer small{
         height: 50%;
         width: 25%;
     }
+    .box-responsive{
+        width: 80%;
+    }
     /*----------------*/
 }
 
@@ -626,6 +633,12 @@ footer small{
     .container-hours, .container-hours:hover{
         height: 50%;
         width: 10%;
+    }
+    .box-responsive{
+        width: 80%;
+    }
+    .more-services{
+        margin-left: 2rem;
     }
     /*----------------*/
 }
