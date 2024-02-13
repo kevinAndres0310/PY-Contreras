@@ -1,0 +1,42 @@
+@import '../base/vars';
+/*Estilos para el main de turno completado */
+.bg-secondary-info-confirmed{
+    background-color: $--bg-300;
+    border-bottom: 1px solid $--bg-100;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    padding: 7px 5px;
+    color: $--text-100;
+    width: 100%;
+
+}
+
+.box-flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-circle{
+    background-color: $--primary-300;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.bg-secondary-info-confirmed-brother{
+    background-color: $--bg-300;
+    border-top: 1px solid $--bg-100;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    padding: 7px 5px;
+    color: $--text-100;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.check{
+    padding: 5px;
+}

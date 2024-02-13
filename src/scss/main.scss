@@ -1,0 +1,17 @@
+//Base
+@import 'base/vars';
+@import 'base/reset';
+
+//Components
+@import 'components/navbar';
+
+//Layout
+@import 'layout/footer';
+
+//page
+@import 'page/home';
+@import 'page/servicios';
+@import 'page/profesional';
+@import 'page/fecha';
+@import 'page/confirmarturno';
+@import 'page/completado';

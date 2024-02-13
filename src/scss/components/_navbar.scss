@@ -1,0 +1,22 @@
+@import '../base/vars';
+
+.navbar {
+    background-color: $--bg-100;
+    &-brand{
+        font-weight: bold;
+     }
+     &-iconos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0; 
+        a {
+            color: $--text-100;
+            margin: 0 0.5rem;
+        }
+    }
+    .active {
+        color: $--primary-200 !important;
+    }
+}
+
