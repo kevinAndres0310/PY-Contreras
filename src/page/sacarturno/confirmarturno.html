@@ -1,172 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
-			rel="stylesheet" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous" />
-		<link rel="stylesheet" href="../../css/main.css" />
-		<title>ConfirmarTurno</title>
-	</head>
-	<body>
-		<header class="fixed-top">
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<section class="container-fluid">
-					<a class="navbar-brand" href="../../index.html"><h1>¡Barbaro!</h1></a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNavAltMarkup"
-						aria-controls="navbarNavAltMarkup"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<section class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<section class="navbar-nav space">
-							<div class="d-lg-flex" aria-current="page">
-								<a class="nav-link" href="../../index.html">Home</a>
-								<a class="nav-link active" href="./servicio.html">Servicio</a>
-								<a class="nav-link" href="#">Acerca de nosotros</a>
-							</div>
-						</section>
-					</section>
-				</section>
-			</nav>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../scss/main.scss" />
+    <title>ConfirmarTurno</title>
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <section class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"
+            ><h2 class="mb-0">¡Barbaro!</h2></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <section class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <section class="navbar-nav space">
+              <div class="d-lg-flex" aria-current="page">
+                <a class="nav-link" href="../../index.html">Home</a>
+                <a class="nav-link active" href="./servicio.html">Servicio</a>
+                <a class="nav-link" href="#">Acerca de nosotros</a>
+              </div>
+            </section>
+          </section>
+        </section>
+      </nav>
+    </header>
 
-		<main class="bg-servicios">
-			<h1 class="col-12 h1-servicios">Confirmar Turno</h1>
-			<section class="col w-100">
-				<!--container-Modal-Info-->
-				<section class="col container-modal box-flex-column p-2">
-					<!--Card-title-->
-					<article
-						class="d-flex align-items-center justify-content-between w-100 border-bottom border-black mb-2">
-						<b class="h5 m-0">Turno a Reservar</b>
-						<small class="price-title">$3.500</small>
-					</article>
-					<!--Container-first-Info-->
-					<article class="d-flex container-first-info">
-						<div class="d-flex align-items-center bg-first-info">
-							<img src="../../assets/iconos/calendar.svg" alt="" />
-							<p class="m-0">Turno1</p>
-						</div>
-					</article>
-					<!--Container-second-Info-->
-					<article class="d-flex container-secondary-info mb-1">
-						<section
-							class="d-flex align-items-center justify-content-between bg-secondary-info">
-							<div class="d-flex align-items-center">
-								<div class="bg-circle">
-									<img
-										src="../../assets/iconos/user-circle.svg"
-										alt="icono de usuario" />
-								</div>
-								<p class="m-0">Juan Gomez</p>
-							</div>
+    <main class="bg-servicios">
+      <h1 class="col-12 h1-servicios">Confirmar Turno</h1>
+      <section class="col w-100">
+        <!--container-Modal-Info-->
+        <section class="col container-modal box-flex-column p-2">
+          <!--Card-title-->
+          <article
+            class="d-flex align-items-center justify-content-between w-100 border-bottom border-black mb-2"
+          >
+            <b class="h5 m-0">Turno a Reservar</b>
+            <small class="price-title">$3.500</small>
+          </article>
+          <!--Container-first-Info-->
+          <article class="d-flex container-first-info">
+            <div class="d-flex align-items-center bg-first-info">
+              <img src="../../assets/iconos/calendar.svg" alt="" />
+              <p class="m-0">Turno1</p>
+            </div>
+          </article>
+          <!--Container-second-Info-->
+          <article class="d-flex container-secondary-info mb-1">
+            <section
+              class="d-flex align-items-center justify-content-between bg-secondary-info"
+            >
+              <div class="d-flex align-items-center">
+                <div class="bg-circle">
+                  <img
+                    src="../../assets/iconos/user-circle.svg"
+                    alt="icono de usuario"
+                  />
+                </div>
+                <p class="m-0">Juan Gomez</p>
+              </div>
 
-							<div class="d-flex">
-								<div class="d-flex">
-									<img
-										src="../../assets/iconos/calendar.svg"
-										alt="icono de calendario" />
-									<p class="m-0">26/12</p>
-								</div>
-								<div class="d-flex">
-									<img src="../../assets/iconos/clock.svg" alt="icono de horario" />
-									<p class="m-0">10:00</p>
-								</div>
-							</div>
-						</section>
-					</article>
-					<!--Container-third-Info-->
-					<article class="d-flex container-secondary-info mb-1">
-						<section
-							class="d-flex align-items-center justify-content-between bg-secondary-info">
-							<div class="d-flex align-items-center">
-								<img src="../../assets/iconos/briefcase.svg" alt="icono de usuario" />
-								<p class="m-0">Corte de Cabello</p>
-							</div>
+              <div class="d-flex">
+                <div class="d-flex">
+                  <img
+                    src="../../assets/iconos/calendar.svg"
+                    alt="icono de calendario"
+                  />
+                  <p class="m-0">26/12</p>
+                </div>
+                <div class="d-flex">
+                  <img
+                    src="../../assets/iconos/clock.svg"
+                    alt="icono de horario"
+                  />
+                  <p class="m-0">10:00</p>
+                </div>
+              </div>
+            </section>
+          </article>
+          <!--Container-third-Info-->
+          <article class="d-flex container-secondary-info mb-1">
+            <section
+              class="d-flex align-items-center justify-content-between bg-secondary-info"
+            >
+              <div class="d-flex align-items-center">
+                <img
+                  src="../../assets/iconos/briefcase.svg"
+                  alt="icono de usuario"
+                />
+                <p class="m-0">Corte de Cabello</p>
+              </div>
 
-							<div class="d-flex">
-								<p class="m-0">$3.500</p>
-							</div>
-						</section>
-					</article>
-					<!--Container-fourth-Info-->
-					<article class="d-flex container-secondary-info">
-						<section
-							class="d-flex align-items-center justify-content-between bg-secondary-info border-none">
-							<div class="d-flex align-items-center">
-								<img src="../../assets/iconos/map-pin.svg" alt="icono de usuario" />
-								<p class="m-0">Independencia, 1579 Capital</p>
-							</div>
-						</section>
-					</article>
-					<article class="d-flex container-secondary-info">
-						<textarea
-							class="textarea-comment"
-							placeholder="Deje su comentario"></textarea>
-					</article>
-					<div class="d-flex justify-content-center w-100">
-						<a
-							href="./completado.html"
-							class="btn btn-primary my-2 w-50"
-							role="button">
-							Continuar
-						</a>
-					</div>
-				</section>
-			</section>
-		</main>
+              <div class="d-flex">
+                <p class="m-0">$3.500</p>
+              </div>
+            </section>
+          </article>
+          <!--Container-fourth-Info-->
+          <article class="d-flex container-secondary-info">
+            <section
+              class="d-flex align-items-center justify-content-between bg-secondary-info border-none"
+            >
+              <div class="d-flex align-items-center">
+                <img
+                  src="../../assets/iconos/map-pin.svg"
+                  alt="icono de usuario"
+                />
+                <p class="m-0">Independencia, 1579 Capital</p>
+              </div>
+            </section>
+          </article>
+          <article class="d-flex container-secondary-info">
+            <textarea
+              class="textarea-comment"
+              placeholder="Deje su comentario"
+            ></textarea>
+          </article>
+          <div class="d-flex justify-content-center w-100">
+            <a
+              href="./completado.html"
+              class="btn btn-primary my-2 w-50"
+              role="button"
+            >
+              Continuar
+            </a>
+          </div>
+        </section>
+      </section>
+    </main>
 
-		<footer class="flex-box-column">
-			<section>
-				<a
-					href="https://www.instagram.com/"
-					aria-label="Visita nuestra pagina de Instagram"
-					target="_blank"
-					rel="noopener">
-					<img src="../../assets/iconos/instagram.svg" alt="icono instagram" />
-				</a>
+    <footer class="flex-box-column">
+      <section class="d-flex">
+        <a
+          href="https://www.instagram.com/"
+          aria-label="Visita nuestra pagina de Instagram"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="../../assets/iconos/instagram.svg" alt="icono instagram" />
+        </a>
 
-				<a
-					href="https://web.facebook.com/"
-					aria-label="Visita nuestra pagina de Facebook"
-					target="_blank"
-					rel="noopener">
-					<img src="../../assets/iconos/facebook.svg" alt="icono de facebook" />
-				</a>
-				<a
-					href="https://www.whatsapp.com/?lang=es_LA"
-					aria-label="Visita nuestra pagina de Whatsapp"
-					target="_blank"
-					rel="noopener">
-					<img src="../../assets/iconos/whatsapp.svg" alt="icono de whatsapp" />
-				</a>
-			</section>
-			<small>
-				Copyright © 2022 - 2023 BarbaroBarbershops SRL. Todos los derechos
-				reservados.
-			</small>
-		</footer>
-		<script
-			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-			crossorigin="anonymous"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-			crossorigin="anonymous"></script>
-	</body>
+        <a
+          href="https://web.facebook.com/"
+          aria-label="Visita nuestra pagina de Facebook"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="../../assets/iconos/facebook.svg" alt="icono de facebook" />
+        </a>
+        <a
+          href="https://www.whatsapp.com/?lang=es_LA"
+          aria-label="Visita nuestra pagina de Whatsapp"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="../../assets/iconos/whatsapp.svg" alt="icono de whatsapp" />
+        </a>
+      </section>
+      <small>
+        Copyright © 2022 - 2023 BarbaroBarbershops SRL. Todos los derechos
+        reservados.
+      </small>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

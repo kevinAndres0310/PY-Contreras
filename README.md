@@ -1,6 +1,10 @@
-# ProjectTurnero
+# Fremework SASS
 
-Las screen de login por ahora no funcionan por ahora.
+## Comandos
 
-el link del proyecto para vizualizarlo en la web es:
-`https://kevinandres0310.github.io/ProjectTurnero/`
+```sh
+
+npm run dev # Inicia servidor de desarrollo
+npm run build # Crea version lista para producción
+
+```

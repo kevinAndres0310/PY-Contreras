@@ -1,13 +1,14 @@
 {
   "name": "turnero",
   "version": "1.0.0",
-  "source": "index.html",
+  "source": "src/index.html",
   "browserlist": "defaults",
   "scripts": {
     "dev": "parcel",
     "build": "parcel build"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
     "parcel": "^2.11.0"
   }
 }

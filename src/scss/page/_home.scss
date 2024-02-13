@@ -2,16 +2,13 @@
 
 /* Titulo y background de Main */
 .bg-home{
+    min-height: calc(100vh - 56px);
+    max-height: 100%;
     width: 100%;
     background: 
     linear-gradient(30deg,rgba(20, 20, 20, 0.5),rgb(0, 0, 0)), url(../assets/home/mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-main{
-    min-height: calc(100vh - 56px);
-    max-height: 100%;
 }
 
 main h1 {
@@ -77,7 +74,7 @@ main h1 {
      }
 
     /*Estilos para Main Home*/
-    main{
+    .bg-home{
         min-height: calc(100vh - 60px);
     }
      main h1 {
