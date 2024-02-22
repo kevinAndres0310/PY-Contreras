@@ -1,0 +1,98 @@
+/* Titulo y background de Main */
+
+// Estilos de fondo de la página principal
+.bg-home {
+    min-height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    background: linear-gradient(30deg, rgba(20, 20, 20, 0.5), rgb(0, 0, 0)), url(../assets/home/mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @include flexUse(flex, column, nowrap, center, center); // Utiliza mixin flexUse para estilos flexibles
+}
+
+// Estilos del título dentro de la página principal
+main h1 {
+    font-size: $font-5xl;  
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+// Estilos del párrafo dentro de la página principal
+.parrafo {
+    text-align: center;
+    font-size: $font-lg;
+    font-weight: $font-light;
+    color: $--text-100;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+/* Circulo flotante de turnos en linea */
+.circle {
+    @include flexUse(flex, row, nowrap, center, center); // Utiliza mixin flexUse para estilos flexibles
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: $--primary-100;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    text-align: center;
+
+    p {
+        font-size: $font-xs;
+        color: $--text-100;
+        font-weight: $font-medium;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+/* Media Queries */
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    main h1 {
+        font-size: $font-6xl;  
+    }
+    .bg-home {
+        background: linear-gradient(30deg, rgba(20, 20, 20, 0.5), rgb(0, 0, 0)), url(../assets/home/tablet.jpg);
+        background-size: cover;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    // Estilos adicionales para tablet
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    // Imagen de fondo para pantallas de escritorio
+    .bg-home {
+        background: linear-gradient(30deg, rgba(20, 20, 20, 0.5), rgb(0, 0, 0)), url(../assets/home/desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    // Estilos adicionales para escritorio
+    .navbar-brand {
+        font-size: 1.7rem;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    // No se requieren estilos adicionales en esta media query
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    // No se requieren estilos adicionales en esta media query
+}

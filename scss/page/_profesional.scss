@@ -1,0 +1,89 @@
+// Importación de variables
+@import '../base/vars';
+
+// Contenedor de tarjetas con avatares
+.container-card-avatar {
+    gap: 2.5%;
+    padding: 5%;
+    width: 100%; 
+    justify-content: center;
+}
+
+// Tarjeta de perfil profesional
+.card-profesional {
+    background-color: $--primary-300;
+    border-radius: 20px;
+    margin: 3rem 0; 
+    border: 3px solid $--bg-300;
+    padding: 3rem 20px 1rem 20px; 
+    position: relative;
+    box-shadow: 2px 2px 15px 2px $--bg-300;
+    width: 80%;
+
+    // Estilos para la información dentro de la tarjeta
+    &-info {
+        @include flexUse(flex, column, nowrap, center, center);
+    } 
+
+    b {
+        color: $--bg-300;
+    }
+    p {
+        font-weight: $font-normal; 
+    }
+}
+
+// Fondo circular para el avatar de usuario
+.bg-circle-user {
+    background-color: $--bg-300;
+    border-radius: 50%;
+    @include flexUse(flex, row, nowrap, center, center);
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & img {
+        aspect-ratio: 1/1;
+        border: 2px solid $--bg-300;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.3s;
+        object-fit: cover;
+    
+        &:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease-in-out; 
+        }
+    }
+}
+
+/* Media Queries */
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    // Ajustes para dispositivos pequeños
+    .card-profesional {
+        width: 45%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    // Ajustes para pantallas de escritorio
+    .card-profesional {
+        width: 30%; 
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}

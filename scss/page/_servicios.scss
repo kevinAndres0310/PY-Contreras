@@ -1,0 +1,102 @@
+/* Estilos para la sección de servicios */
+.bg-servicios { 
+    @include flexUse (flex, column, nowrap, flex-start, center); 
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: $--primary-200;
+
+    /* Estilos para el título */
+    .h1-servicios {
+        padding-top: 95px;   
+        color: $--bg-200;
+        font-size: $font-5xl;  
+    } 
+
+    &-container-items{
+        @include flexUse (flex, row, nowrap, center, center);
+        flex-grow: 1;  
+    }
+    
+}
+
+/* Estilos para las tarjetas de servicios */
+.card-servicios {
+    border: 1px solid $--bg-100;  
+    background-color: $--primary-300;
+    height: 100%;
+    font-size: $font-sm; 
+
+    /* Estilos para el título de la tarjeta */
+    .bg-title {
+        background-color: $--bg-300;
+        color: $--text-100;
+        border-bottom: 2px solid $--bg-100; 
+
+        p {
+            font-weight: $font-bold; 
+            color: $--primary-200; 
+        }    
+    }      
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-item img {
+    width: 100%;
+    max-height: 350px;
+}
+
+/* Estilos para botones absolutos */
+.boton-absolute {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 10px 10px 0;
+}
+
+/* Estilos para cajas */
+.caja {
+    position: relative;
+
+    p {
+        font-weight: $font-normal;
+        color: $--bg-300; 
+    }
+}
+
+/* Media Queries */
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    /* Ajustes para dispositivos pequeños */
+    .bg-servicios {
+        .h1-servicios {
+            font-size: $font-6xl;
+        }       
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    /* Ajustes para tabletas */
+    .card-servicios {      
+        font-size: $font-lg;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    /* Ajustes para pantallas de escritorio */
+    .card-servicios {      
+        font-size: $font-xl; 
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    /* No se requieren estilos adicionales para este tamaño */
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    /* No se requieren estilos adicionales para este tamaño */
+}

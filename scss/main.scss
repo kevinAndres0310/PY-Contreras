@@ -1,0 +1,29 @@
+//Vars
+@import 'base/vars';
+
+//Mixins
+@import 'base/mixins';
+
+//Base
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utils';
+
+
+//Components
+@import 'components/navbar';
+@import 'components/link';
+@import 'components/button';
+
+//Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+//page
+@import 'page/home';
+@import 'page/servicios';
+@import 'page/profesional';
+@import 'page/fecha';
+@import 'page/confirmarturno';
+@import 'page/completado';

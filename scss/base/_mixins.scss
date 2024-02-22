@@ -1,0 +1,29 @@
+@mixin buttonColorVariant($name, $color, $hover-color, $contrast-color ) {
+    &.button-#{$name} {
+        --#{$prefix}-button-bg: #{$color};
+        --#{$prefix}-button-color: #{$contrast-color};
+        --#{$prefix}-button-hover-bg: #{$hover-color};
+        --#{$prefix}-button-color-hover: #{$contrast-color};
+        &.button-outline{
+            --#{$prefix}-button-bg: transparent;
+            --#{$prefix}-button-color: #{$color};
+            --#{$prefix}-button-hover-bg: #{$hover-color};
+            --#{$prefix}-button-color-hover: #{$contrast-color};
+        }
+        &.button-plain{
+            --#{$prefix}-button-bg: #{$color};
+            --#{$prefix}-button-border-color: #{$contrast-color};
+            --#{$prefix}-button-color: #{$contrast-color};
+            --#{$prefix}-button-color-hover: #{$contrast-color};
+            --#{$prefix}-button-hover-bg: #{$hover-color};
+        }
+    }
+}
+
+
+@mixin flexUse ($dis ,$direction, $wrap, $justify, $align) {
+    display: $dis;
+    flex-flow: $direction $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,0 +1,64 @@
+/** BUTTON RELATED VARIABLES */
+$button-radius: var(--#{$prefix}-button-radius, 0.5rem);
+
+
+.button {
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 12px 32px;
+    display: inline-flex;
+    outline: 0;
+    font-size: $font-md;
+    text-align: center;
+    transition: all .2s ease;
+    font-weight: $font-medium;
+    line-height: 1;
+    text-transform: none;
+    text-decoration: none;
+
+    color: var(--#{$prefix}-button-color);
+    border-color: var(--#{$prefix}-button-border-color);
+    border-radius: $button-radius;
+    background-color: var(--#{$prefix}-button-bg);
+
+    // States
+    &:hover {
+        color: var(--#{$prefix}-button-color-hover);
+        background-color: var(--#{$prefix}-button-hover-bg);
+        border-color: var(--#{$prefix}-button-hover-border);
+    }
+    &:focus{
+        outline: 0;
+        box-shadow: 0 0 0 2px $color-focus;
+    }
+    &:active{
+        transform: scale3d(.95, .95, 1);
+    }
+    &:disabled{
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+    //Types
+
+
+    //Colors
+
+    @include buttonColorVariant('primary', $--primary-100, $--primary-200, $--primary-300);
+    @include buttonColorVariant('secondary', $--bg-200, $--bg-100, $--text-100);
+
+    //Sizes
+
+    &.button-small{
+        padding: 8px 24px;
+        font-size: $font-sm;
+    }
+    &.button-large{
+        padding: 16px 48px;
+        font-size: $font-lg;
+    }
+    &.button-block{
+        display: block;
+        width: 100%;
+    }
+}
