@@ -1,0 +1,110 @@
+.container-about{
+    @include flexUse (flex, column, nowrap, flex-start, center);
+    flex-grow: 1;
+    padding: 1rem;
+    gap: 3rem;
+
+    &-us{
+
+        @include flexUse(flex, column, nowrap, space-evenly, center); 
+        background-color: $--bg-300;  
+        padding: 1rem;
+        border: 2px solid $--primary-300;       
+        border-radius: 2rem;
+        box-shadow: $shadow-xl;  
+
+        &-img{  
+             
+            img{
+                border-radius: 1rem;
+                max-height: 250px;  
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        
+        &-title{
+            text-align: center;
+            color: $--text-100;   
+        }   
+        &-content{
+            color: $--text-100;   
+        }
+    }
+
+    .all-members{
+        color: $--bg-300; 
+    }
+ 
+    &-card-members{
+        max-width: 200px; 
+        margin: 1rem 1%;  
+        background-color: $--primary-300;
+        padding: 0 0 0.5rem 0;   
+        overflow: hidden; 
+        border-radius: 1rem;  
+        box-shadow: $shadow-md;
+
+        
+
+
+        &-body{
+            padding-top: 15px; 
+
+            h4{
+                color: $--bg-300; 
+            } 
+            p{
+                color: $--text-200; 
+            }
+        }
+
+        .img-container{
+            height: 300px;
+            img{
+                filter: grayscale(100%);
+                transition: 0.5s ease;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.1);  
+                    filter: grayscale(0%);   
+                }
+            }
+        }
+    }
+}
+
+
+/*// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .container-about{ 
+        
+        &-us{
+            @include flexUse(flex, row, wrap, space-evenly, flex-start);  
+            &-img{
+                max-width: 300px;  
+                img{
+                    
+                }
+            }
+            
+            &-title{
+
+            }
+        }
+    }
+}
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
