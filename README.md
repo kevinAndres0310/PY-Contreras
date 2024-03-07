@@ -24,6 +24,8 @@ El **Turnero de Barbería** es una iniciativa creada por **Kevin Contreras**, di
 
 **Nota:** Por el momento, este proyecto es solo un prototipo y las funcionalidades mencionadas no están implementadas.
 
+Aquí esta el enlace para observar el proyecto: **https://kevinandres0310.github.io/PY-Contreras/**
+
 ## Herramientas Utilizadas
 
 - HTML5
