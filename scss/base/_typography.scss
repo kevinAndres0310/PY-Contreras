@@ -12,32 +12,10 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
-h1{
-    margin: 32px;
-    font-size: 2.5rem;
-}
-
-h2{
-    margin: 24px;
-    font-size: 2rem;
-}
-
-h3{
-    margin: 16px;
-    font-size: 1.75rem;
-}
-
-h4{
-    margin: 12px;
-    font-size: 1.5rem;
-}
-
-h5{
-    margin: 8px;
-    font-size: 1.25rem;
-}
-
-h6{
-    margin: 4px;
-    font-size: 1rem;
+@for $i from 1 through 6 {
+    $margin: 36px - ($i * 4px);
+  
+    h#{$i} {
+      margin: $margin;
+    }
 }

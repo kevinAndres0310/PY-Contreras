@@ -71,32 +71,26 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 h1 {
   margin: 32px;
-  font-size: 2.5rem;
 }
 
 h2 {
-  margin: 24px;
-  font-size: 2rem;
+  margin: 28px;
 }
 
 h3 {
-  margin: 16px;
-  font-size: 1.75rem;
+  margin: 24px;
 }
 
 h4 {
-  margin: 12px;
-  font-size: 1.5rem;
+  margin: 20px;
 }
 
 h5 {
-  margin: 8px;
-  font-size: 1.25rem;
+  margin: 16px;
 }
 
 h6 {
-  margin: 4px;
-  font-size: 1rem;
+  margin: 12px;
 }
 
 /** CSS VARIABLES PREFIX */
@@ -376,7 +370,36 @@ main h1 {
 }
 
 /* Circulo flotante de turnos en linea */
-.circle {
+@keyframes fadeIn {
+  50% {
+    transform: scale(1.04);
+  }
+}
+.circle-anillo {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: rgba(69, 69, 69, 0.5);
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  animation: fadeIn 2s infinite;
+}
+.circle-anillo-second {
+  animation: fadeIn 2s infinite;
+  height: 78px;
+  width: 78px;
+  border-radius: 50%;
+  background-color: rgba(105, 180, 255, 0.4);
+  display: grid;
+  place-items: center;
+  justify-items: center;
+}
+.circle-anillo-content {
+  animation: fadeIn 2s infinite;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -385,12 +408,9 @@ main h1 {
   width: 70px;
   border-radius: 50%;
   background-color: #0085ff;
-  position: absolute;
-  bottom: 5px;
-  right: 20px;
-  text-align: center;
+  margin: 0;
 }
-.circle p {
+.circle-anillo-content p {
   font-size: 0.75rem;
   color: #FFFFFF;
   font-weight: 500;

@@ -30,32 +30,70 @@ main h1 {
 }
 
 /* Circulo flotante de turnos en linea */
-.circle {
-    @include flexUse(flex, row, nowrap, center, center); // Utiliza mixin flexUse para estilos flexibles
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    background-color: $--primary-100;
-    position: absolute;
-    bottom: 5px;
-    right: 20px;
-    text-align: center;
 
-    p {
-        font-size: $font-xs;
-        color: $--text-100;
-        font-weight: $font-medium;
-        text-align: center;
-        margin: 0;
+@keyframes fadeIn {
+    0% {
+
+    }
+    50%{
+        transform: scale(1.04);   
+    }
+    100%{
+ 
     }
 }
+
+.circle-anillo{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;  
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgba($--bg-300, $alpha: 0.5);    
+    display: grid;
+    place-items: center; 
+    justify-items: center; 
+    animation: fadeIn 2s infinite; 
+
+    &-second{
+        animation: fadeIn 2s infinite; 
+        height: 78px;   
+        width: 78px; 
+        border-radius: 50%;
+        background-color: rgba($--primary-200, $alpha: 0.4);              
+        display: grid;
+        place-items: center; 
+        justify-items: center;
+    }
+
+    &-content {
+        animation: fadeIn 2s infinite; 
+        @include flexUse(flex, row, nowrap, center, center); // Utiliza mixin flexUse para estilos flexibles
+        height: 70px;
+        width: 70px; 
+        border-radius: 50%;
+        background-color: $--primary-100; 
+        margin: 0; 
+    
+        p {
+            font-size: $font-xs;
+            color: $--text-100;
+            font-weight: $font-medium;
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+
+
 
 /* Media Queries */
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     main h1 {
-        font-size: $font-6xl;  
+        font-size: $font-6xl;   
     }
     .bg-home {
         background: linear-gradient(30deg, rgba(20, 20, 20, 0.5), rgb(0, 0, 0)), url(../assets/home/tablet.jpg);

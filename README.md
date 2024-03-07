@@ -20,7 +20,7 @@ El **Turnero de Barbería** es una aplicación web diseñada para simplificar el
 
 ## Acerca de Nosotros
 
-El **Turnero de Barbería** es una iniciativa creada por "Kevin Contreras", diseñada para ofrecer una experiencia de reserva de turnos más conveniente y eficiente para los clientes de la barbería. Esta aplicación busca simplificar el proceso de reserva y mejorar la experiencia del cliente en general.
+El **Turnero de Barbería** es una iniciativa creada por **Kevin Contreras**, diseñada para ofrecer una experiencia de reserva de turnos más conveniente y eficiente para los clientes de la barbería. Esta aplicación busca simplificar el proceso de reserva y mejorar la experiencia del cliente en general.
 
 **Nota:** Por el momento, este proyecto es solo un prototipo y las funcionalidades mencionadas no están implementadas.
 
